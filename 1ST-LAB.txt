@@ -1,0 +1,61 @@
+Create table tt1(usn integer primary key,name varchar(10),phno integer,branch varchar(10));
+2
+                 insert into tt1 values(100,'RACHITH',99455,'CS');
+3
+                 insert into tt1 values(200,'SANDRSH',72456,'EC');
+4
+                 insert into tt1 values(202,'BHUVAN',96785,'IS');
+5
+                 insert into tt1 values(401,'RAMA',88970,'ME');
+6
+                 insert into tt1 values(205,'KRISHNA',66789,'MT');
+7
+ 
+8
+            
+9
+                     
+Text to DDL
+Query SQL
+1
+select *from tt1
+2
+?
+
+Results
+**Schema (MySQL v5.7)**
+
+    Create table tt1(usn integer primary key,name varchar(10),phno integer,branch varchar(10));
+                     insert into tt1 values(100,'RACHITH',99455,'CS');
+                     insert into tt1 values(200,'SANDRSH',72456,'EC');
+                     insert into tt1 values(202,'BHUVAN',96785,'IS');
+                     insert into tt1 values(401,'RAMA',88970,'ME');
+                     insert into tt1 values(205,'KRISHNA',66789,'MT');
+     
+                
+                         
+
+---
+
+**Query #1**
+
+    select *from tt1;
+
+| usn | name    | phno  | branch |
+| --- | ------- | ----- | ------ |
+| 100 | RACHITH | 99455 | CS     |
+| 200 | SANDRSH | 72456 | EC     |
+| 202 | BHUVAN  | 96785 | IS     |
+| 205 | KRISHNA | 66789 | MT     |
+| 401 | RAMA    | 88970 | ME     |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/f/svVtEj7UsqMMw2dzQpFPeC/13)
+Copy as Markdown
+Query #1 Execution time: 0ms
+usn	name	phno	branch
+100	RACHITH	99455	CS
+200	SANDRSH	72456	EC
+202	BHUVAN	96785	IS
+205	KRISHNA	66789
